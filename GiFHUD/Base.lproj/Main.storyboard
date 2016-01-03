@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="INe-YV-d6U">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJf-Vf-oUy">
+                                <rect key="frame" x="281" y="90" width="38" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VL8-lA-QPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9f-AE-Ig9">
+                                <rect key="frame" x="273" y="562" width="54" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FYe-Ac-jDs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gV-qm-uP4">
+                                <rect key="frame" x="189" y="128" width="222" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Show with overlay for 2 seconds">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWithOverlayPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JrY-qs-UMv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q8D-DZ-wEA">
+                                <rect key="frame" x="191" y="213" width="218" height="116"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.53425678453947367" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="a2u-Sd-I5o"/>
+                                    <constraint firstAttribute="width" constant="60" id="dxf-ll-QvN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAC-YC-f4Z">
+                                <rect key="frame" x="278" y="481" width="45" height="30"/>
+                                <animations/>
+                                <state key="normal" title="下一页"/>
+                                <connections>
+                                    <action selector="pushbtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dgk-7G-ic0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q8D-DZ-wEA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2CS-Ue-yOb"/>
+                            <constraint firstAttribute="centerX" secondItem="h9f-AE-Ig9" secondAttribute="centerX" id="42f-CJ-leC"/>
+                            <constraint firstAttribute="centerY" secondItem="h9f-AE-Ig9" secondAttribute="centerY" id="8GM-TR-Eon"/>
+                            <constraint firstItem="gJf-Vf-oUy" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="90" id="ATX-KT-9HZ"/>
+                            <constraint firstAttribute="centerY" secondItem="2gV-qm-uP4" secondAttribute="centerY" id="Ab8-HX-yHm"/>
+                            <constraint firstAttribute="centerX" secondItem="gJf-Vf-oUy" secondAttribute="centerX" id="DJO-NS-AGC"/>
+                            <constraint firstAttribute="centerX" secondItem="2gV-qm-uP4" secondAttribute="centerX" id="ESF-DC-dzY"/>
+                            <constraint firstAttribute="centerX" secondItem="gJf-Vf-oUy" secondAttribute="centerX" id="F9b-p1-S7B"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="h9f-AE-Ig9" secondAttribute="bottom" constant="8" id="PrK-91-7T5"/>
+                            <constraint firstAttribute="centerX" secondItem="h9f-AE-Ig9" secondAttribute="centerX" id="RcK-VK-qoL"/>
+                            <constraint firstItem="h9f-AE-Ig9" firstAttribute="top" secondItem="aAC-YC-f4Z" secondAttribute="bottom" constant="51" id="Yu6-Qh-F8a"/>
+                            <constraint firstAttribute="centerY" secondItem="gJf-Vf-oUy" secondAttribute="centerY" id="a9D-6R-vmM"/>
+                            <constraint firstItem="h9f-AE-Ig9" firstAttribute="top" secondItem="Q8D-DZ-wEA" secondAttribute="bottom" constant="100" id="ckZ-ps-z7R"/>
+                            <constraint firstItem="aAC-YC-f4Z" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="jiB-NR-diK"/>
+                            <constraint firstItem="2gV-qm-uP4" firstAttribute="top" secondItem="gJf-Vf-oUy" secondAttribute="bottom" constant="8" id="qP7-n1-Ifk"/>
+                            <constraint firstAttribute="centerX" secondItem="2gV-qm-uP4" secondAttribute="centerX" id="szu-O3-FhY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ab8-HX-yHm"/>
+                                <exclude reference="szu-O3-FhY"/>
+                                <exclude reference="DJO-NS-AGC"/>
+                                <exclude reference="a9D-6R-vmM"/>
+                                <exclude reference="42f-CJ-leC"/>
+                                <exclude reference="8GM-TR-Eon"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="YfY-J0-DhC"/>
+                    <connections>
+                        <outlet property="imageView" destination="Q8D-DZ-wEA" id="69y-Dm-6nH"/>
+                        <outlet property="nextBtn" destination="aAC-YC-f4Z" id="ldv-wa-FoM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="233"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wLC-Kr-5jc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="INe-YV-d6U" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Mn-gQ-7Fo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="rQa-lz-N2S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3l-6y-vpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="233"/>
+        </scene>
+    </scenes>
+</document>
